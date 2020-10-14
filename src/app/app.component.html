@@ -16,7 +16,7 @@
   </div>
     <div class="row text-center">
       <ng-container *ngFor="let beer of beers">
-        <app-beer *ngIf="beer.stock > 0" [data]="beer" [ngClass]="{'last': beer.stock === 1}"  class="col-md-3 col-sm-6" (addToBasket)="add(beer)"></app-beer>
+        <app-beer *ngIf="beer.stock > 0" [data]="beer" [ngClass]="{'last': beer.stock == 1}" (addToBasket)="add(beer)" class="col-md-3 col-sm-6"></app-beer>
       </ng-container>
     </div>
   <hr>

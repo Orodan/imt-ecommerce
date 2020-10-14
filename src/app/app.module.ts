@@ -4,7 +4,9 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component'
 import { FooterComponent } from './footer/footer.component'
-import { BeerComponent } from './beer/beer.component'
+import { BeerComponent } from './beer/beer.component';
+import { MatButtonModule } from '@angular/material/button';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
  
 @NgModule({
     declarations: [
@@ -12,6 +14,8 @@ import { BeerComponent } from './beer/beer.component'
     ],
     imports: [
         BrowserModule,
+        BrowserAnimationsModule,
+        MatButtonModule
     ],
     bootstrap: [AppComponent]
 })

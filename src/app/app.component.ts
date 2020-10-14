@@ -64,14 +64,8 @@ export class AppComponent {
     this.decreaseStock(beer)
   }
 
-  decreaseStock(beer): void {
-    this.basket.forEach ( (stockBeer) => {
-      if (stockBeer.id == beer.id) {
-        console.log(`Beer ${stockBeer.name}:${stockBeer.stock}`)
-        stockBeer.stock = stockBeer.stock - 1 ;
-      }
-      return;
-    })
+  decreaseStock(beer: any): void {
+   beer.stock--;
   }
 
   getTotal (): number {
