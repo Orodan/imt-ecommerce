@@ -5,6 +5,7 @@
             <div class="content">
               <h3>{{ data.title }}</h3>
               <p>{{ data.tagline}}</p>
+              <p>{{ data.price |currency: 'EUR' }}</p>
             </div>
             <p>
                 <button mat-raised-button color="primary" (click)="add()">Add to basket</button>
