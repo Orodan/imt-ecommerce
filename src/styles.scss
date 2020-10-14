@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+.app {
+    min-height: calc(100vh - 60px)
+}
+
+.hero-spacer {
+  margin-top: 50px;
+}
+
+.product-item {
+  margin-bottom: 30px;
+}
+
+.thumbnail .caption {
+  height: 215px;
+}
+
+.content {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+img {
+  height: 250px;
+  width: auto;
+}
+.last {
+  background-color: #f80606a3;
+}
+  
+footer {
+  padding-bottom: 20px;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
